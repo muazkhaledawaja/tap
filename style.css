@@ -213,3 +213,8 @@ footer {
        left: -10px;
     }
 }
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 20px 40px;  
+    }
+}
