@@ -53,11 +53,11 @@ header {
 .container {
     margin-top: 20px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 20px;
+    gap: 15 px;
 }
 
 .container h3 {
@@ -123,9 +123,8 @@ header {
 }
 
 .square-img {
-    width: 50%;
-    max-width: 100%;
-    height: auto;
+    width: auto;
+    height: 400px;
 }
 
 footer {
@@ -133,4 +132,30 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar {
+        text-align: center;
+    }
+    .navbar li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .square-img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
 }
